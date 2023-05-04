@@ -58,11 +58,6 @@ a {
   margin-bottom: 10px;
 }
 
-#nosotros {
-  margin: 0 auto;
-  height: 35vh;
-}
-
 .vs {
   margin-top: 10px;
   display: flex;
@@ -91,8 +86,8 @@ a {
 }
 
 iframe {
-  width: 800px;
-  height: 320px;
+  width: 740px;
+  height: 260px;
 }
 
 .carousel-control-prev-icon {
@@ -104,11 +99,11 @@ iframe {
 }
 
 .carousel-item img {
-  height: 45vh;
+  height: 40vh;
 }
 
 .card img {
-  height: 45vh;
+  height: 40vh;
 }
 
 @media (min-width: 768px) {

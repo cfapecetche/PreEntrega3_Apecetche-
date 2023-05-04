@@ -1,0 +1,85 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: $fuente-principal;
+}
+
+h1{  
+    text-align: left;
+    margin-left: $espacio-chico;
+    
+}
+
+img {
+    max-width: 100%;
+}
+
+.cabecera {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: $color-fondo;
+    width: 100%;
+} 
+
+.cabecera img {
+	padding: $espacio-Xchico;
+    width: $espacio-Xgrande;
+}
+
+
+a {
+    text-decoration: none;
+    color: $color-letra;
+	
+}
+
+.nav-link,
+.navbar-nav .nav-link.active {
+    color: $color-primario;
+
+    &:hover {
+        color: $color-terciario;
+    }
+}
+
+.fondo { 
+
+    background-image: url("../image/texture-7515225_1280.jpg") ;
+	height: 600px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: $espacio-Xchico $espacio-Xchico;
+	margin-bottom: $espacio-Xchico;
+
+}
+
+
+.vs {
+	margin-top: $espacio-Xchico;
+    @include flex-fila-centrado;
+    flex-wrap: wrap;
+	gap: $espacio-Xchico;
+    
+}
+
+
+
+
+.p_blanco {
+	color: $color-fondo;
+   }
+
+
+.cpy{
+	position: relative;
+    width: 150px;
+	bottom: $espacio-medio;
+	left: 300px;  
+}
+
+
+

@@ -1,0 +1,55 @@
+@media (min-width: $tablet) {
+    #nosotros {
+        margin: 50px auto;
+        height: 350px;
+    }
+}
+@media (min-width: $desktop) {
+    .carousel-item img {
+        max-width: 60%;
+        margin: 0 auto;
+        height: 60vh;
+    }
+    #iframe1{ 
+        width: 800px;
+        height: 430px;
+    }
+
+    #contacto{
+        display: grid;
+        grid-template-columns: repeat(3, 30%);
+        grid-template-rows: $espacio-Xgrande auto $espacio-Xgrande;
+        gap: $espacio-chico;
+        padding: auto;       
+     
+     
+    }
+    #recorrido{
+        max-width: 60%;
+        margin: 0 auto;
+        height: 70vh;
+
+    }
+
+}
+
+
+@media (min-width: $desktopXG) {
+    .carousel-item img {
+        max-width: 60%;
+        margin: 0 auto;
+        height: 70vh;
+    }
+    #iframe1{ 
+        width: 800px;
+        height: 450px;
+    }
+
+    
+    #recorrido{
+        max-width: 45%;
+        margin: 10px auto;
+        height: 55vh;
+    }
+
+}

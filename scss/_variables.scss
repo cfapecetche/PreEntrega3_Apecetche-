@@ -1,0 +1,41 @@
+/*Paleta de colores*/
+$color-primario: #595959;
+$color-secundario: #7f7f7f;
+$color-terciario: #a5a5a5;
+$color-fondo:white;
+$color-letra: black;
+
+/*Tamaños de fuentes e iconos*/
+$fuente-chica: 14px;
+$fuente-media: 20px;
+$icono-chico: 40px;
+$icono-grande: 60px;
+
+/*Resoluciones de pantallas*/
+$tablet: 768px;
+$desktop: 992px;
+$desktopXG: 1200px;
+
+/*Separaciones (margenes y paddings)*/
+$espacio-Xchico: 10px;
+$espacio-chico: 20px;
+$espacio-medio: 40px;
+$espacio-grande: 60px;
+$espacio-Xgrande: 100px;
+
+/*Fuente*/
+$fuente-principal:'Josefin Sans';
+
+/*MIXINS*/
+@mixin flex-columna {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin flex-fila-centrado {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}

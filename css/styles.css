@@ -87,7 +87,7 @@ a {
 
 iframe {
   width: 740px;
-  height: 280px;
+  height: 210px;
 }
 
 .contacto {
@@ -110,7 +110,7 @@ iframe {
 }
 
 .card img {
-  height: 40vh;
+  height: 35vh;
 }
 
 @media (min-width: 768px) {
@@ -157,6 +157,9 @@ iframe {
     margin: 10px auto;
     height: 55vh;
   }
+}
+.carousel-item img {
+  height: 27vh;
 }
 
 /*# sourceMappingURL=styles.css.map */

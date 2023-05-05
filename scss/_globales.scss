@@ -8,8 +8,20 @@
 h1{  
     text-align: left;
     margin-left: $espacio-chico;
+    animation-duration: 3s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
     
 }
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+ }
 
 img {
     max-width: 100%;
@@ -81,5 +93,29 @@ a {
 	left: 300px;  
 }
 
+/*BARRA PROGRESO*/
 
+.barra-progreso {
+    margin-left: 20px;
+    width: 60%;
+    border: solid 2px;
+    height: 15px;
+}
 
+.barra-rellena {
+    border: solid 1px;
+    height: 11px;
+    width: 50%;
+    background-color: $color-secundario;
+    animation: rellenando 2s;
+}
+
+@keyframes rellenando {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 20%;
+    }
+}

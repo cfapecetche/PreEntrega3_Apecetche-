@@ -114,7 +114,7 @@ iframe {
 }
 
 .carousel-item img {
-  height: 27vh;
+  height: 50vh;
 }
 
 @media (min-width: 768px) {

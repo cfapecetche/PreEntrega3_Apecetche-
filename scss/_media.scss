@@ -4,16 +4,19 @@
         margin: 50px auto;
         height: 350px;
     }
+    #iframe1{ 
+        width: 40rem;
+        height: 25rem;
+    }
 }
 @media (min-width: $desktop) {
     .carousel-item img {
-        max-width: 60%;
         margin: 0 auto;
         height: 60vh;
     }
     #iframe1{ 
-        width: 800px;
-        height: 430px;
+        width: 55em;
+        height: 28rem;
     }
 
     #contacto{
@@ -25,33 +28,43 @@
      
      
     }
-    #recorrido{
-        max-width: 60%;
-        margin: 0 auto;
-        height: 70vh;
-
-    }
+    
 
 }
 
 
 @media (min-width: $desktopXG) {
     .carousel-item img {
-        max-width: 60%;
+        max-width: 88%;
         margin: 0 auto;
         height: 70vh;
     }
     #iframe1{ 
-        width: 800px;
-        height: 450px;
+        width: 70rem;
+        height: 28rem;
     }
 
     
-    #recorrido{
-        max-width: 45%;
-        margin: 10px auto;
-        height: 55vh;
+}
+
+@media (min-width: $desktopXXG) {
+    .carousel-item img {
+        margin: 0 auto;
+        height: 70vh;
     }
+   
+    #iframe1{ 
+        width: 70rem;
+        height: 28rem;
+    }
+
+    
+    .card img {
+        
+        height: 60vh;
+       
+    }
+    
 
 }
 

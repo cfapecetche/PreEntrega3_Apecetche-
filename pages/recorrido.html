@@ -4,15 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Palabras clave -->
-    <meta name="keywords" content="recorrido, ambiente, ambiental, reciclado, basura">
-    
-    <!-- Descripción -->
-    <meta name="description" content="En esta seccion encontraras lo necesario para ver cual es tu recorrido.">
 
+     <!-- Descripción -->
+     <meta name="description" content="Bienvenidos al sitio de basura diferenciada, en esta seccion encontraras lo necesario para ver cual es tu recorrido de recoleccion de residuos diferenciados en tu zona.">
 
-
+     <!-- Palabras clave -->
+     <meta name="keywords" content="recorrido, ambiente, ambiental recoleccion, zona sur, diferenciada, reciclado, basura">
+      
+ 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 	  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -78,35 +77,98 @@
   <h1>Recorrido-Basura diferenciada</h1>   
 <section  class="fondo">
 
+  <!--Pongo los input radio que no se van a ver pero se usan para el filtro-->
+
+      <div class="filtro">
+        <input type="radio" name="seleccionado" id="jm" cheched>
+        <input type="radio" name="seleccionado" id="adr">
+        <input type="radio" name="seleccionado" id="br">
+        <input type="radio" name="seleccionado" id="lng">
+        <input type="radio" name="seleccionado" id="glw">
+        <input type="radio" name="seleccionado" id="rcz">
+        <input type="radio" name="seleccionado" id="cla">
 
 
-  <div  class="card mb-3">
-    <img id="recorrido" src="../image/recorrido.JPG" class="card-img-top" alt="Imagen de recorrido">
+      <div class="container-opciones">
+      
+  <!--Pongo los labels para el filtro-->
+
+          <label for="jm">Jose Marmol</label>
+          <label for="adr">Adrogue</label>
+          <label for="br">Burzaco</label>
+          <label for="lng">Longchamps</label>
+          <label for="glw">Glew</label>
+          <label for="rcz">Rafael Calzada</label>
+          <label for="cla">Claypole</label>
+     
+
+
+        
+          </div>
+
+          
+
+        <div class="container-cards">
+            <!-- Cards de  Recorridos -->
+            <div class="col card h-100 card-jm">
+                <img src="../image/recorrido_jm.JPG" class="card-img-top" alt="Imagen recorrido Jose Marmol">
+                <div class="card-body">
+                    <h5 class="card-title">Recorrido - José Mármol</h5>
+                    <p class="card-text">Bernardi - Pérez - F. Varela - Arroyito - (Alte. Brown) - E. Echeverría - Canale - Dorrego</p>
+                    
+                </div>
+            </div>
+            
+            <div class="col card h-100 card-adr" >
+                <img src="../image/recorrido_adr.JPG" class="card-img-top" alt="Imagen recorrido Adrogue">
+                <div class="card-body">
+                    <h5 class="card-title">Recorrido - Adrogue</h5>
+                    <p class="card-text">Canale- Robinson - La Rosa - Bernardi - Frias - Bynnon - Lasserre - Echeverria - Escalada</p>
+                </div>
+            </div>
+
+            <div class="col card h-100 card-br">
+                <img src="../image/recorrido_br.JPG" class="card-img-top" alt="Imagen recorrido Burzaco">
+                <div class="card-body">
+                    <h5 class="card-title">Recorrido - Burzaco</h5>
+                    <p class="card-text">Azopardo - French - González - República Argentina - Juan B. Justo - Santa Fe - Pringles </p>
+                </div>
+            </div>
+
+            <div class="col card h-100 card-lng">
+                <img src="../image/recorrido_lng.JPG" class="card-img-top" alt="Imagen recorrido Longchamps">
+                <div class="card-body">
+                    <h5 class="card-title">Recorido - Longchamps</h5>
+                    <p class="card-text">Intendente Brunel - Doctor Kellertas - Avenida Hipólito Yrigoyen - Sarmiento - Uspallata - Jorge Newbery</p>
+               </div>
+            </div>
+
+            <div class="col card h-100 card-glw" >
+                <img src="../image/recorrido_glw.JPG" class="card-img-top" alt="Imagen recorrido Glew">
+                <div class="card-body">
+                    <h5 class="card-title">Recorrido - Glew</h5>
+                    <p class="card-text">Calderon - M. Cane - Gobernador Arias - A. Lamberti -  Capitan Almandos Almonacid - Avenida Almafuerte,</p>
+                </div>
+            </div>
+
+            <div class="col card h-100 card-rcz" >
+                <img src="../image/recorrido_rcz.JPG" class="card-img-top" alt="Imagen recorrido Rafael Calzada">
+                <div class="card-body">
+                    <h5 class="card-title">Recorrido - Rafael Calzada</h5>
+                    <p class="card-text"> Italia - Cervantes Saavedra - Angonelli - Avenida San Martin - Drumond - Rev. Padre Masramon - Plaza Brown</p>
+                </div>
+            </div>
+
+            <div class="col card h-100 card-cla" >
+              <img src="../image/recorrido_cla.JPG" class="card-img-top" alt="Imagen recorrido Claypole">
+              <div class="card-body">
+                  <h5 class="card-title">Recorrido - Claypole</h5>
+                  <p class="card-text">Sempere - Sargento Cabral - Dean Funes - Aristobulo del Valle - Liniers - A. Alcorta - Aristobulo del Valle</p>
+          
+              </div>
+          </div>
+        </div>
     
-
-    <div class="card-body">
-      <h5 class="card-title">Porcentaje de recorrido completado actualmente </h5>
-      <div class="barra-progreso">
-        <div class="barra-rellena"></div>
-    </div>
-      <p class="card-text">La recolección diferenciada se lleva adelante de 12 a 17. En Adrogué, por ejemplo, se realiza los martes y jueves, al igual que en Burzaco. En Claypole, los miércoles; en Don Orione, los lunes; en José Mármol, los lunes y viernes; y en Glew los viernes, al igual que en Longchamps y Rafael Calzada.</p>
-      <p class="card-text">
-        <small class="text-body-secondary">Elegi la fecha para ver el recorrido</small></p>
-        <input type="date" name="Calendario" id="" >
-    </div>
-    
-  </div>
-
-<section class="mt-5">
-   
-</section>
-
-
-</section>
-
-
-
-
 
 
 </main>
@@ -114,38 +176,46 @@
 
 
 <footer class="mt-5">
-    <!--Enlace interno-->
+    
 
-    <div>
+  <div class="d-flex justify-content-center pie">
+   
+  <!--Enlace interno-->
     <a href="#arriba">
-        <img src="../image/flecha_ar.jpg" alt="Imagen flecha arriba" title="Arriba">    
+      <span class="iconify" data-icon="mdi:arrow-expand-up"></span>
     </a>
     <!--Enlace fb-->
     <a href="https://www.facebook.com/profile.php?id=100079611353120" target="_blank">
-            <img src="../image/fb.jpg" alt="imagen facebook" title="Seguinos en Facebook">
+      <span class="iconify" data-icon="mdi:facebook"></span>
     </a>
-    <!--Enlace ig-->
+    
+     <!--Enlace ig-->
     <a href="https://www.instagram.com/explore/tags/poloreciclador/" target="_blank">
-        <img src="../image/ig.jpg" alt="Imagen Instagram" title="Seguinos en Instagram">
+        <span class="iconify" data-icon="mdi:instagram"></span>
     </a>
     <!--Enlace WS-->
     <a href="https://wa.me/54900000" target="_blank">
-            <img src="../image/ws.jpg" alt="Imagen whatsApp" title="Comunicate por WhatsApp" >
-     </a>
+      <span class="iconify" data-icon="mdi:whatsapp"></span>
+    </a>
+
+  </div>
+
+    <div class="d-flex justify-content-center">
+    
+    <p>&copy 2023 Apecetche </p>
 
     </div>
-     <div class="cpy">
 
-        <p>&copy 2023 Apecetche </p>
-
-     </div>
-
-    
+  
 </footer>
+
+<!-- script iconify -->
+<script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+
 
 <!--Agrego el link al script de Bootstrap-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 
-    
+
 </body>
 </html>

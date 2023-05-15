@@ -1,0 +1,54 @@
+
+/* primero no muestro ni los op buttons ni las cards, menos jm que es la default*/
+#jm, #adr, #br, #lng, #glw, #rcz, #cla, .card-adr, .card-br, .card-lng, .card-glw, .card-rcz, .card-cla {
+    display: none;
+}
+
+/* hago esto para que cuando toco cualquier localidad deje de mostrar la default, osea jm*/
+#adr:checked ~ .container-cards .card-jm,
+#br:checked ~ .container-cards .card-jm,
+#lng:checked ~ .container-cards .card-jm,
+#glw:checked ~ .container-cards .card-jm,
+#rcz:checked ~ .container-cards .card-jm,
+#cla:checked ~ .container-cards .card-jm
+{
+    display: none;
+}
+
+
+/* con cada opcion muestro la card correspondiente a la localidad */
+#jm:checked ~ .container-cards .card-jm,
+#adr:checked ~ .container-cards .card-adr,
+#br:checked ~ .container-cards .card-br,
+#lng:checked ~ .container-cards .card-lng,
+#glw:checked ~ .container-cards .card-glw,
+#rcz:checked ~ .container-cards .card-rcz,
+#cla:checked ~ .container-cards .card-cla
+{
+    display: flex;
+}
+
+
+.container-cards {
+    @include flex-columna;
+    gap: $espacio-medio;
+    margin-top: $espacio-Xchico
+}
+
+.container-opciones label {
+   
+    cursor: pointer;
+    padding: 8px 15px;
+    font-size: $fuente-chica;
+    
+
+    &:hover {
+        background-color: $color-terciario;
+        color: $color-primario
+    }
+}
+
+.card img {
+    height: 65vh;
+   
+}

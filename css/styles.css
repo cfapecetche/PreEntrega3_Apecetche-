@@ -36,6 +36,7 @@ img {
   top: 0;
   z-index: 1;
   background-color: white;
+  opacity: 0.9;
   width: 100%;
 }
 
@@ -60,7 +61,6 @@ a {
 
 .fondo {
   background-image: url("../image/texture-7515225_1280.jpg");
-  height: 600px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -75,45 +75,27 @@ a {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  width: 100%;
   flex-wrap: wrap;
   gap: 10px;
+}
+
+#nosotros:hover {
+  transform: scale(0.9);
 }
 
 .p_blanco {
   color: white;
 }
 
-.cpy {
-  position: relative;
-  width: 150px;
-  bottom: 40px;
-  left: 300px;
+.iconify {
+  font-size: 3rem;
 }
 
-/*BARRA PROGRESO*/
-.barra-progreso {
-  margin-left: 20px;
-  width: 60%;
-  border: solid 2px;
-  height: 15px;
+.pie {
+  gap: 20px;
 }
 
-.barra-rellena {
-  border: solid 1px;
-  height: 11px;
-  width: 50%;
-  background-color: #7f7f7f;
-  animation: rellenando 2s;
-}
-
-@keyframes rellenando {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 20%;
-  }
-}
 .video {
   display: flex;
   justify-content: center;
@@ -121,8 +103,56 @@ a {
 }
 
 iframe {
-  width: 740px;
-  height: 210px;
+  width: 25rem;
+  height: 18rem;
+}
+
+/* primero no muestro ni los op buttons ni las cards, menos jm que es la default*/
+#jm, #adr, #br, #lng, #glw, #rcz, #cla, .card-adr, .card-br, .card-lng, .card-glw, .card-rcz, .card-cla {
+  display: none;
+}
+
+/* hago esto para que cuando toco cualquier localidad deje de mostrar la default, osea jm*/
+#adr:checked ~ .container-cards .card-jm,
+#br:checked ~ .container-cards .card-jm,
+#lng:checked ~ .container-cards .card-jm,
+#glw:checked ~ .container-cards .card-jm,
+#rcz:checked ~ .container-cards .card-jm,
+#cla:checked ~ .container-cards .card-jm {
+  display: none;
+}
+
+/* con cada opcion muestro la card correspondiente a la localidad */
+#jm:checked ~ .container-cards .card-jm,
+#adr:checked ~ .container-cards .card-adr,
+#br:checked ~ .container-cards .card-br,
+#lng:checked ~ .container-cards .card-lng,
+#glw:checked ~ .container-cards .card-glw,
+#rcz:checked ~ .container-cards .card-rcz,
+#cla:checked ~ .container-cards .card-cla {
+  display: flex;
+}
+
+.container-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  margin-top: 10px;
+}
+
+.container-opciones label {
+  cursor: pointer;
+  padding: 8px 15px;
+  font-size: 14px;
+}
+.container-opciones label:hover {
+  background-color: #a5a5a5;
+  color: #595959;
+}
+
+.card img {
+  height: 65vh;
 }
 
 .contacto {
@@ -141,11 +171,7 @@ iframe {
 }
 
 .carousel-item img {
-  height: 40vh;
-}
-
-.card img {
-  height: 35vh;
+  height: 60vh;
 }
 
 @media (min-width: 768px) {
@@ -153,16 +179,19 @@ iframe {
     margin: 50px auto;
     height: 350px;
   }
+  #iframe1 {
+    width: 40rem;
+    height: 25rem;
+  }
 }
 @media (min-width: 992px) {
   .carousel-item img {
-    max-width: 60%;
     margin: 0 auto;
     height: 60vh;
   }
   #iframe1 {
-    width: 800px;
-    height: 430px;
+    width: 55em;
+    height: 28rem;
   }
   #contacto {
     display: grid;
@@ -171,27 +200,37 @@ iframe {
     gap: 20px;
     padding: auto;
   }
-  #recorrido {
-    max-width: 60%;
-    margin: 0 auto;
-    height: 70vh;
-  }
 }
 @media (min-width: 1200px) {
   .carousel-item img {
-    max-width: 60%;
+    max-width: 88%;
     margin: 0 auto;
     height: 70vh;
   }
   #iframe1 {
-    width: 800px;
-    height: 450px;
+    width: 70rem;
+    height: 28rem;
   }
-  #recorrido {
-    max-width: 45%;
-    margin: 10px auto;
-    height: 55vh;
+}
+@media (min-width: 1500px) {
+  .carousel-item img {
+    margin: 0 auto;
+    height: 70vh;
   }
+  #iframe1 {
+    width: 70rem;
+    height: 28rem;
+  }
+  .card img {
+    height: 60vh;
+  }
+}
+#error404 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -32,8 +32,9 @@ img {
     top: 0;
     z-index: 1;
     background-color: $color-fondo;
+    opacity: .9;
     width: 100%;
-} 
+    } 
 
 .cabecera img {
 	padding: $espacio-Xchico;
@@ -54,12 +55,13 @@ a {
     &:hover {
         color: $color-terciario;
     }
+   
 }
+
 
 .fondo { 
 
     background-image: url("../image/texture-7515225_1280.jpg") ;
-	height: 600px;
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -79,43 +81,27 @@ a {
 }
 
 
+#nosotros:hover {
+    transform: scale(0.90);
+}
 
 
 .p_blanco {
 	color: $color-fondo;
    }
 
-
-.cpy{
-	position: relative;
-    width: 150px;
-	bottom: $espacio-medio;
-	left: 300px;  
+.iconify {
+    font-size: 3rem; 
 }
 
-/*BARRA PROGRESO*/
-
-.barra-progreso {
-    margin-left: 20px;
-    width: 60%;
-    border: solid 2px;
-    height: 15px;
+.pie {
+    gap: 20px;
 }
 
-.barra-rellena {
-    border: solid 1px;
-    height: 11px;
-    width: 50%;
-    background-color: $color-secundario;
-    animation: rellenando 2s;
-}
 
-@keyframes rellenando {
-    0% {
-        width: 0;
-    }
 
-    100% {
-        width: 20%;
-    }
-}
+
+
+
+
+
